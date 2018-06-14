@@ -94,6 +94,8 @@ public class CustomerDao extends Dao<String, CustomerVO> {
 			pstmt = con.prepareStatement(SQL.getAll);
 			rs = pstmt.executeQuery();
 			
+			
+			
 			while(rs.next())
 			{
 				customers = new ArrayList<CustomerVO>();
